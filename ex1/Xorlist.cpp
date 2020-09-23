@@ -77,7 +77,7 @@ void delete_begin(struct Node *head){
 }
 
 void delete_end(struct Node *head){
-    if(head==NULL){
+    if(head==NULL || head->nptr==NULL){
         head = NULL;
         return;
     }
